@@ -44,9 +44,9 @@
             height: 100vh;
             z-index: 0;
             overflow: hidden;
-            /* Overlay gradient - optimized for the night sky background */
-            background: linear-gradient(rgba(8, 11, 18, 0.55), rgba(8, 11, 18, 0.55)), 
-                        url('https://images.unsplash.com/photo-1635776062127-d379bfcba9f8?auto=format&fit=crop&q=80&w=2000');
+            /* Vibrant Rainbow Background */
+            background: linear-gradient(rgba(8, 11, 18, 0.4), rgba(8, 11, 18, 0.4)), 
+                        url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=2000');
             background-size: cover;
             background-position: center;
         }
@@ -78,13 +78,12 @@
             flex-direction: column;
             gap: 0.75rem;
             align-items: center;
-            background: linear-gradient(rgba(8, 11, 18, 0.7), rgba(8, 11, 18, 0.7)), 
-                        url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=1000&q=80');
-            background-size: cover;
-            background-position: center;
-            border: 1px solid var(--card-border);
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 20px;
-            padding: 2rem;
+            padding: 2.5rem;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
             width: 100%;
         }
@@ -144,12 +143,11 @@
             justify-content: center;
             gap: 0.5rem;
             width: 100%;
-            padding: 0.75rem;
-            background: linear-gradient(rgba(8, 11, 18, 0.6), rgba(8, 11, 18, 0.6)), 
-                        url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&q=80');
-            background-size: cover;
-            background-position: center;
-            border: 1px solid var(--card-border);
+            padding: 0.85rem;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             color: var(--text-main);
             text-decoration: none;
@@ -218,7 +216,7 @@
         .cursor-pixel {
             width: 4px;
             height: 4px;
-            background: #B497CF; /* Matching the PixelBlast color */
+            background: #FF0080; /* Rainbow Pink */
             position: fixed;
             pointer-events: none;
             z-index: 9998;
@@ -485,7 +483,7 @@
         const uniforms = {
             uResolution: { value: new THREE.Vector2(renderer.domElement.width, renderer.domElement.height) },
             uTime: { value: 0 },
-            uColor: { value: new THREE.Color('#B497CF') },
+            uColor: { value: new THREE.Color('#FF0080') },
             uClickPos: { value: Array.from({ length: 10 }, () => new THREE.Vector2(-1, -1)) },
             uClickTimes: { value: new Float32Array(10) },
             uShapeType: { value: SHAPE_MAP.circle },
