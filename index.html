@@ -44,7 +44,7 @@
             padding: 1rem 0;
         }
 
-        /* Animated Aura Background */
+        /* Background with Image and Interactive Overlay */
         #pixel-blast-root {
             position: fixed;
             top: 0;
@@ -52,7 +52,9 @@
             width: 100%;
             height: 100%;
             z-index: 0;
-            background: var(--bg-color);
+            background: var(--bg-color) url('finalbg.jpg');
+            background-size: cover;
+            background-position: center center;
             overflow: hidden;
         }
 
@@ -305,13 +307,7 @@
     </style>
 </head>
 <body>
-    <div id="pixel-blast-root">
-        <div class="aura-container">
-            <div class="aura aura-1"></div>
-            <div class="aura aura-2"></div>
-            <div class="aura aura-3"></div>
-        </div>
-    </div>
+    <div id="pixel-blast-root"></div>
     <div id="custom-cursor"></div>
     <main>
         <div class="profile">
