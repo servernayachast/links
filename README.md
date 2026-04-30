@@ -10,7 +10,7 @@ A minimal social links landing page.
 
 ## Links
 - LinkedIn: https://www.linkedin.com/in/theshantanujoshi/
-- GitHub: https://github.com/servernayachast
+- GitHub: https://github.com/theshantanujoshi
 - Email: shantanu@gobitsnbytes.org
 - Instagram: https://www.instagram.com/ashanthumain/
 - Discord: baakisabmast
