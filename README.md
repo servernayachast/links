@@ -11,6 +11,7 @@ A minimal social links landing page.
 ## Links
 - LinkedIn: https://www.linkedin.com/in/theshantanujoshi/
 - GitHub: https://github.com/theshantanujoshi
+- Resume: https://drive.google.com/file/d/1-aySDKr-qELNRwXdDJYEp8wrK51INs04/viewusp=drive_link
 - Email: shantanu@gobitsnbytes.org
 - Instagram: https://www.instagram.com/ashanthumain/
 - Discord: baakisabmast
